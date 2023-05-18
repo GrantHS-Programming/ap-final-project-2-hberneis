@@ -4,26 +4,50 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    public enum AttackDirection
+    {
+        left,right
+    }
 
-    Vector2 attackOffset;
+    public AttackDirection attackDirection;
+
+    Vector2 rightAttackOffset;
 
     Collider2D swordCollider;
 
     private void Start()
     {
-        swordCollider = GetComponent<swordCollider2D>();
-    }
-    public void AttackRight
-    {
-        swordCollider.enabled = true;
+        swordCollider = GetComponent<Collider2D>();
+        rightAttackOffset = transform.position;
     }
 
-    public void AttackLeft
+    public void Attack()
     {
-        swordCollider.enabled = true;
+        switch (attackDirection)
+        {
+            case AttackDirection.left:
+                AttackLeft();
+                    break;
+            case AttackDirection.right:
+                AttackRight();
+                    break;
+
+        }
     }
 
-    public void StopAttack
+    private void AttackRight()
+    {
+        swordCollider.enabled = true;
+        transform.position = rightAttackOffset;
+    }
+
+    private void AttackLeft()
+    {
+        swordCollider.enabled = true;
+        transform.position = new Vector3(rightAttackOffset.x* -1, rightAttackOffset.y);
+    }
+
+    public void StopAttack()
     {
         swordCollider.enabled = false;
     }
