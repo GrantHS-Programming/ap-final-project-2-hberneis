@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
 
     public ContactFilter2D movementFilter;
+    
     Vector2 movementInput;
 
     SpriteRenderer spriteRenderer;
@@ -77,7 +78,7 @@ public class PlayerController : MonoBehaviour
         {
 
             int count = rb.Cast(
-        direction,
+            direction,
             movementFilter,
             castCollisions,
             moveSpeed * Time.fixedDeltaTime + collisionOffset);
