@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: player_attack
+  m_Name: slime_damage
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1725380207, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
+      value: {fileID: -1498265422, guid: b0e5dfc27bce6e645aaa75e84ec6235c, type: 3}
     - time: 0.016666668
-      value: {fileID: -285965386, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
+      value: {fileID: -1699344546, guid: b0e5dfc27bce6e645aaa75e84ec6235c, type: 3}
     - time: 0.033333335
-      value: {fileID: -2054334633, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
-    - time: 0.05
-      value: {fileID: 1412165496, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
+      value: {fileID: -540708432, guid: b0e5dfc27bce6e645aaa75e84ec6235c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,16 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1725380207, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
-    - {fileID: -285965386, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
-    - {fileID: -2054334633, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
-    - {fileID: 1412165496, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
+    - {fileID: -1498265422, guid: b0e5dfc27bce6e645aaa75e84ec6235c, type: 3}
+    - {fileID: -1699344546, guid: b0e5dfc27bce6e645aaa75e84ec6235c, type: 3}
+    - {fileID: -540708432, guid: b0e5dfc27bce6e645aaa75e84ec6235c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.06666667
+    m_StopTime: 0.050000004
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -74,18 +71,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: SwordAttack
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.05
-    functionName: EndSwordAttack
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

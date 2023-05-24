@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
 
     public ContactFilter2D movementFilter;
+
+    public SwordAttack swordAttack;
     
     Vector2 movementInput;
 
@@ -107,6 +109,26 @@ public class PlayerController : MonoBehaviour
         void OnFire()
     {
         animator.SetTrigger("swordAttack");
+    }
+
+    public void SwordAttack()
+    {
+        LockMovement();
+        if(spriteRenderer.flipX == true)
+        {
+            swordAttack.AttackLeft();
+        }
+        else
+        {
+            swordAttack.AttackRight();
+        }
+ 
+    }
+
+    public void EndSwordAttack()
+    {
+        UnlockMovement();
+        swordAttack.StopAttack();
     }
 
     public void LockMovement()

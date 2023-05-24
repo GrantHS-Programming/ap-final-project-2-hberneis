@@ -40,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6259998281538652120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.25}
+  m_Size: {x: 0.18, y: 0.3}
   m_EdgeRadius: 0
 --- !u!114 &5317742265783864596
 MonoBehaviour:
@@ -71,7 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bff4889f8dd86743b332a08b2ed5d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDirection: 0
+  swordCollider: {fileID: 4961442259939471152}
+  damage: 3
 --- !u!1 &6455216745625400079
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1187077068, guid: 2ce3111b74a255d4599228bcb8586691, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -220,6 +221,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  swordAttack: {fileID: 5317742265783864596}
 --- !u!50 &837704703971186961
 Rigidbody2D:
   serializedVersion: 4
