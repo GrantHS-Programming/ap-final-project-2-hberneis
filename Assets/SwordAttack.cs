@@ -33,7 +33,7 @@ public class SwordAttack : MonoBehaviour
         swordCollider.enabled = false;
     }
 
-    private void OnTrigger2D (Collider2D other)
+    private void OnTrigger2D(Collider2D other)
     {
         if(other.tag == "Enemy")
         {
