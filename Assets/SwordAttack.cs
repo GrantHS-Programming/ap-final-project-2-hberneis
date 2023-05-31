@@ -12,6 +12,7 @@ public class SwordAttack : MonoBehaviour
 
     private void Start()
     {
+        swordCollider = GetComponent<Collider2D>();
         rightAttackOffset = transform.position;
     }
 
@@ -33,7 +34,7 @@ public class SwordAttack : MonoBehaviour
         swordCollider.enabled = false;
     }
 
-    private void OnTrigger2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Enemy")
         {
