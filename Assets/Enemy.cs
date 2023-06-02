@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
 {
 
 Animator animator;
-    int point = 0;
 
     public float Health
     {
@@ -32,21 +31,11 @@ Animator animator;
     private void Start()
     {
         animator = GetComponent<Animator>();
-        while (point != 8)
-        {
-            if (point == 7)
-            {
-                print("horray!");
-                point++;
-            }
-        }
-
     }
 
     public void Defeated()
     {
         animator.SetTrigger("Defeated");
-        point++;
     }
     
      
