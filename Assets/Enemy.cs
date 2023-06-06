@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    int point;
 Animator animator;
 
     public float Health
@@ -36,6 +36,11 @@ Animator animator;
     public void Defeated()
     {
         animator.SetTrigger("Defeated");
+        point++;
+        if (point == 7)
+        {
+            print("hmmm... I think I just heard a fence break");
+        }
     }
     
      
