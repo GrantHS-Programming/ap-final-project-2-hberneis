@@ -39,7 +39,7 @@ Animator animator;
         point++;
         if (point == 7)
         {
-            print("hmmm... I think I just heard a fence break");
+            
         }
     }
     
